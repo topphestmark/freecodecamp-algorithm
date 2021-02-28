@@ -1,14 +1,28 @@
+// Non 'replace()' method
+
 function myReplace(str, before, after) {
-  const isCapitalized = before[0] >= "A" && before[0] <= "Z";
+  const isCapitalized = /[A-Z]/g.test(before[0]);
   let casedAfter;
 
-  if (isCapitalized) {
-    casedAfter = after[0].toUpperCase() + after.substring(1);
-  } else {
-    casedAfter = after[0].toLowerCase() + after.substring(1);
+  {
+    isCapitalized
+      ? (casedAfter = after[0].toUpperCase() + after.substring(1))
+      : (casedAfter = after[0].toLowerCase() + after.substring(1));
   }
 
-  return str.replace(before, casedAfter);
+  let replacedString = str;
+  for (let i = 0; i < replacedString.length; i++) {
+    const idxString = replacedString.substring(i, i + before.length);
+
+    idxString === before &&
+      (replacedString =
+        replacedString.substring(0, i) +
+        casedAfter +
+        replacedString.substring(i + before.length));
+    i += casedAfter.length - 1;
+  }
+
+  return replacedString;
 }
 
 console.log(
