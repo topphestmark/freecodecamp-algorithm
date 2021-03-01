@@ -1,5 +1,32 @@
 function pairElement(str) {
-  return str;
+  // Base pairs are a pair of AT and CG.
+  const stringArr = [];
+  const dnaArr = str.split("");
+
+  for (let char of dnaArr) {
+    switch (char) {
+      case "A": {
+        stringArr.push([char, "T"]);
+        break;
+      }
+      case "T": {
+        stringArr.push([char, "A"]);
+        break;
+      }
+      case "C": {
+        stringArr.push([char, "G"]);
+        break;
+      }
+      case "G": {
+        stringArr.push([char, "C"]);
+        break;
+      }
+      default:
+        return "";
+    }
+  }
+
+  return stringArr;
 }
 
 console.log(pairElement("GCG"));

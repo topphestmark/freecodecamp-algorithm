@@ -9,4 +9,5 @@
 - [x] [spinalCase](./src/spinalCase.js) - [spinalCase-2](./src/spinalCase-2.js)
 - [x] [pigLatin](./src/pigLatin.js) - [pigLatin-2](./src/pigLatin-2.js)
 - [x] [Search and replace](./src/myReplace.js) - [Search and replace 2](./src/myReplace-2.js)
-- [ ] [Pair Element](./src/pairElement.js)
+- [x] [Pair Element](./src/pairElement.js) - [Pair Element 2](./src/pairElement-2.js)
+- [ ] [Missing Letter](./src/fearNotLetter.js)
