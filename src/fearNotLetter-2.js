@@ -1,17 +1,18 @@
+// Not really recommended
+
 const fearNotLetter = (str) => {
-  let output = undefined;
+  return str.split("").reduce((acc, char, idx, arr) => {
+    if (!arr[idx + 1]) return acc;
 
-  for (let i = 0; i < str.length - 1; i++) {
-    const currentASCIIcCode = str.charCodeAt(i);
-    const nextASCIICode = str.charCodeAt(i + 1);
+    const currentCode = char.charCodeAt(0);
+    const nextCode = arr[idx + 1].charCodeAt(0);
 
-    if (nextASCIICode - currentASCIIcCode !== 1) {
-      output = String.fromCharCode(currentASCIIcCode + 1);
-      break;
+    if (nextCode - currentCode !== 1) {
+      return String.fromCharCode(currentCode + 1);
     }
-  }
 
-  return output;
+    return acc;
+  }, undefined);
 };
 
 console.log(fearNotLetter("abce")); // --> 'd'
