@@ -1,6 +1,16 @@
-const uniteUnique = (arr) => {
-  return arr;
-};
+function uniteUnique(arr) {
+  const result = arguments[0];
+
+  [...arguments].slice(1).forEach((el) => {
+    for (let num of el) {
+      if (![...result].includes(num)) {
+        result.push(num);
+      }
+    }
+  });
+
+  return result;
+}
 
 console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
 // --> [1, 3, 2, 5, 4]
