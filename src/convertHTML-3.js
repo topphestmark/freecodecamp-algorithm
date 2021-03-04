@@ -1,20 +1,16 @@
+const htmlEntitiesName = {
+  "&": "&amp;",
+  "<": "&lt;",
+  ">": "&gt;",
+  '"': "&quot;",
+  "'": "&apos;",
+};
+
 const convertHTML = (str) => {
   let output = "";
 
   for (let char of str) {
-    if (char === "&") {
-      output += "&amp;";
-    } else if (char === "<") {
-      output += "&lt;";
-    } else if (char === ">") {
-      output += "&gt;";
-    } else if (char === '"') {
-      output += "&quot;";
-    } else if (char === "'") {
-      output += "&apos;";
-    } else {
-      output += char;
-    }
+    output += char in htmlEntitiesName ? htmlEntitiesName[char] : char;
   }
 
   return output;
@@ -37,6 +33,3 @@ console.log(convertHTML("<>"));
 
 console.log(convertHTML("abc"));
 // --> abc
-
-// Convert HTML Entities
-// Convert the characters &, <, >, " (double quote), and ' (apostrophe), in a string to their corresponding HTML entities.
