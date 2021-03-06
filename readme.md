@@ -15,4 +15,5 @@
       [Solution 3](./src/uniteUnique-3.js) / [Solution 4](./src/uniteUnique-4.js) / [Solution 5](./src/uniteUnique-5.js)
 - [x] [convertHTML](./src/convertHTML.js) / [Solution 2](./src/convertHTML-2.js) /
       [Solution 3](./src/convertHTML-3.js) / [Solution 4](./src/convertHTML-4.js)
-- [ ] [Sum All Odd Fibonacci](./src/sumFibs.js)
+- [x] [Sum All Odd Fibonacci](./src/sumFibs.js) / [Solution 2](./src/sumFibs-2.js)
+- [ ] [Sum all primes](./src/sumPrimes.js)
