@@ -1,6 +1,6 @@
-# Algorithms challenge, freecodecamp.org
+# Algorithms challenges, freecodecamp.org
 
-### Intermediate level
+### Intermediate
 
 - [x] [Sum all numbers in range](./src/sumAll.js)
 - [x] [diffArray](./src/diffArray.js) NOTE: Worked locally, but not on freecodecamp.
@@ -16,4 +16,6 @@
 - [x] [convertHTML](./src/convertHTML.js) / [Solution 2](./src/convertHTML-2.js) /
       [Solution 3](./src/convertHTML-3.js) / [Solution 4](./src/convertHTML-4.js)
 - [x] [Sum All Odd Fibonacci](./src/sumFibs.js) / [Solution 2](./src/sumFibs-2.js)
-- [ ] [Sum all primes](./src/sumPrimes.js)
+- [x] [Sum all primes](./src/sumPrimes.js) / [Solution 2](./src/sumPrimes-2.js)
+- [x] [Smallest Common Multiple](./src/smallestCommons.js)
+- [ ] [Drop it](./src/dropElements.js)
