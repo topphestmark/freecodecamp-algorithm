@@ -18,4 +18,5 @@
 - [x] [Sum All Odd Fibonacci](./src/sumFibs.js) / [Solution 2](./src/sumFibs-2.js)
 - [x] [Sum all primes](./src/sumPrimes.js) / [Solution 2](./src/sumPrimes-2.js)
 - [x] [Smallest Common Multiple](./src/smallestCommons.js)
-- [ ] [Drop it](./src/dropElements.js)
+- [x] [Drop it](./src/dropElements.js) / [Solution 2](./src/dropElements-2.js)
+- [ ] [Steamroller](./src/steamroller.js)
