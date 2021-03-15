@@ -19,4 +19,6 @@
 - [x] [Sum all primes](./src/sumPrimes.js) / [Solution 2](./src/sumPrimes-2.js)
 - [x] [Smallest Common Multiple](./src/smallestCommons.js)
 - [x] [Drop it](./src/dropElements.js) / [Solution 2](./src/dropElements-2.js)
-- [ ] [Steamroller](./src/steamroller.js)
+- [x] [Steamroller](./src/steamroller.js)
+- [x] [Binary Agents](./src/binaryAgent.js) / [Solution 2](./src/binaryAgent-2.js)
+- [ ] [Truth Check](./src/truthCheck.js)
