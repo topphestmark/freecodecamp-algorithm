@@ -1,5 +1,14 @@
 const truthCheck = (collection, pre) => {
-  return pre;
+  let isTruthy = true;
+
+  for (let obj of collection) {
+    if (!obj[pre]) {
+      isTruthy = false;
+      break;
+    }
+  }
+
+  return isTruthy;
 };
 
 truthCheck(

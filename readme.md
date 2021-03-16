@@ -21,4 +21,5 @@
 - [x] [Drop it](./src/dropElements.js) / [Solution 2](./src/dropElements-2.js)
 - [x] [Steamroller](./src/steamroller.js)
 - [x] [Binary Agents](./src/binaryAgent.js) / [Solution 2](./src/binaryAgent-2.js)
-- [ ] [Truth Check](./src/truthCheck.js)
+- [x] [Truth Check](./src/truthCheck.js) / [Sulution 2](./src/truthCheck-2.js)
+- [ ] [Arguments Optional](./src/addTogether.js)
