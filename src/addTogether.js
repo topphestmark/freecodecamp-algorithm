@@ -1,13 +1,28 @@
-const addTogether = () => {
-  return false;
-};
+function addTogether() {
+  const [arg1, arg2] = [...arguments];
 
-addTogether(2, 3); // 5
-addTogether(23, 30); // 53
-addTogether(5)(7); // 12
-addTogether("http://bit.ly/IqT6zt"); // undefined
-addTogether(2, "3"); // undefined
-addTogether(2)([3]); // undefined
+  if (typeof arg1 !== "number") return undefined;
+
+  if (arg2 === undefined) {
+    return function (num) {
+      if (typeof num !== "number") return undefined;
+      return arg1 + num;
+    };
+  }
+
+  if (typeof arg2 !== "number") {
+    return undefined;
+  }
+
+  return arg1 + arg2;
+}
+
+console.log(addTogether(2, 3)); // 5
+console.log(addTogether(23, 30)); // 53
+console.log(addTogether(5)(7)); // 12
+console.log(addTogether("http://bit.ly/IqT6zt")); // undefined
+console.log(addTogether(2, "3")); // undefined
+console.log(addTogether(2)([3])); // undefined
 
 // ### Arguments Optional ###
 // Create a function that sums two arguments together. If only one argument is provided, then return a function that expects one argument and returns the sum.
