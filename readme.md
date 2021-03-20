@@ -24,3 +24,4 @@
 - [x] [Truth Check](./src/truthCheck.js) / [Sulution 2](./src/truthCheck-2.js)
 - [x] [Arguments Optional](./src/addTogether.js) / [Solution 2](./src/addTogether-2.js) / [Solution 3](./src/addTogether-3.js)
 - [ ] [Make a Person](./src/Person.js)
+- [x] [Map the Debris](./src/orbitalPeriod.js)
