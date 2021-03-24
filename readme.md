@@ -30,4 +30,5 @@
 
 - [x] [Palindrome](./src/palindrome.js) / [1 loop](./src/palindrome-2.js)
 - [x] [Convert to Roman](./src/convertToRoman.js)
-- [ ] [Caesars Cipher](./src/rot13.js)
+- [x] [Caesars Cipher](./src/rot13.js)
+- [ ] [Telephone Number Validator](./src/telephoneCheck.js)

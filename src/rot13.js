@@ -1,16 +1,33 @@
-function rot13(str) {
-  return str;
-}
+const A_CODE = "A".charCodeAt(0);
 
-rot13("SERR PBQR PNZC");
+const rot13 = (str) => {
+  let output = "";
 
-rot13("SERR PBQR PNZC"); // FREE CODE CAMP
+  for (let char of str) {
+    if (!/[A-Z]/.test(char)) output += char;
+    else {
+      let code = char.charCodeAt(0);
+      code -= 13;
+      if (code < A_CODE) code += 26;
 
-rot13("SERR CVMMN!"); // FREE PIZZA!
+      output += String.fromCharCode(code);
+    }
+  }
 
-rot13("SERR YBIR?"); // FREE LOVE?
+  return output;
+};
 
-rot13("GUR DHVPX OEBJA SBK WHZCF BIRE GUR YNML QBT."); // THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+console.log(rot13("SERR PBQR PNZC"));
+// FREE CODE CAMP
+
+console.log(rot13("SERR CVMMN!"));
+// FREE PIZZA!
+
+console.log(rot13("SERR YBIR?"));
+// FREE LOVE?
+
+console.log(rot13("GUR DHVPX OEBJA SBK WHZCF BIRE GUR YNML QBT."));
+// THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
 
 // ### Caesars Cipher ###
 
