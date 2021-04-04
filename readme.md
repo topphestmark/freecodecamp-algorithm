@@ -32,4 +32,4 @@
 - [x] [Convert to Roman](./src/convertToRoman.js)
 - [x] [Caesars Cipher](./src/rot13.js)
 - [x] [Telephone Number Validator](./src/telephoneCheck.js)
-- [ ] [Cash Register](./src/checkCashRegister.js)
+- [x] [Cash Register](./src/checkCashRegister.js) - FreeCodeCamp didn't like this one :(
